@@ -10,20 +10,20 @@
 </head>
 <body class="yui3-skin-sam">
   <script type="text/coffeescript">
-    ct = new CusTest()
-    ct.addCase
-      name: 'example test'
-      testAll: ->
-        YUITest.Assert.areEqual 27, 27, 'yeah'
-      testAll2: ->
-        YUITest.Assert.areEqual 27, 22, 'yeah2'
-    ct.addCase
-      name: 'example 2'
-      testOne: ->
-        YUITest.Assert.areEqual 2, 3, '2 != 3'
-      testTwo: ->
-        YUITest.Assert.areEqual 2, 2, '2 = 2'
-    ct.test()
+  ct = new CusTest()
+  ct.addCase
+    name: 'example 1'
+    test1: ->
+      YUITest.Assert.areEqual 27, 27, '27 = 27 ?'
+    test2: ->
+      YUITest.Assert.areEqual 27, 22, '27 = 22 ?'
+  ct.addCase
+    name: 'example 2'
+    testOne: ->
+      YUITest.Assert.areEqual 2, 3, '2 = 3 ?'
+    testTwo: ->
+      YUITest.Assert.areEqual 2, 2, '2 = 2 ?'
+  ct.test()
   </script>
 </body>
 </html>
