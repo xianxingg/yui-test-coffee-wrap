@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+
+  <script src="javascripts/yui-min.js"></script>
+  <script src="javascripts/coffee-script-compiler.min.js"></script>
+  <script src="javascripts/custest.js"></script>
+  <script src="javascripts/log.keypress.js"></script>
+</head>
+<body class="yui3-skin-sam">
+  <script type="text/coffeescript">
+    ct = new CusTest()
+    ct.addCase
+      name: 'example test'
+      testAll: ->
+        YUITest.Assert.areEqual 27, 27, 'yeah'
+      testAll2: ->
+        YUITest.Assert.areEqual 27, 22, 'yeah2'
+    ct.addCase
+      name: 'example 2'
+      testOne: ->
+        YUITest.Assert.areEqual 2, 3, '2 != 3'
+      testTwo: ->
+        YUITest.Assert.areEqual 2, 2, '2 = 2'
+    ct.test()
+  </script>
+</body>
+</html>
