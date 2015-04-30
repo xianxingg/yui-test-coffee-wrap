@@ -22,3 +22,7 @@ use coffeescript to add yui test case
 
 
 pressing [i|p|f|s] will show/hide [info|pass|fail|status] data.
+
+reference
+1. coffee script compiler : https://github.com/jashkenas/coffeescript/blob/master/extras/coffee-script.js
+2. YUI test : https://github.com/yui/yuitest/
